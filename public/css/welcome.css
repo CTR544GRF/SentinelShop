@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/fondo.webp);
+    background-size: cover; 
+}
+
+.contenedor {
+    padding: 15px; 
+    border-radius: 10px;
+    width: 70%;
+    max-width: 350px;
+    margin-top: 50px;
+    margin-left: 500px;
+    background-color: rgba(32, 105, 195, 0.5)
+}
+
+.contenedor form {
+    background-color: rgba(32, 105, 195, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px; 
+    font-family: 'Holtwood One SC', sans-serif;
+    font-size: 1.6em; 
+}
+
+.contenedor .form_group {
+    margin-bottom: 10px ;
+}
+
+.contenedor label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contenedor .from_input {
+    width: calc(100% - 20px);
+    padding: 8px; 
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px; 
+}
+.contenedor button {
+    background-color: #158FFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.contenedor button:hover {
+    opacity: 0.8;
+}
+
+.contenedor a {
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.contenedor .form_line {
+    border: 1px solid white;
+    margin-bottom: 15px;
+}

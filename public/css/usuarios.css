@@ -1,0 +1,104 @@
+
+.titulo{
+    color: #525252;
+    padding-bottom: 15px;
+    border-bottom:1px solid #525252;
+}
+
+.form_group {
+    margin:20px 0;
+    width: 40%;
+}
+
+.form_group_1{
+    margin: 20px 2.5%;
+    width: 95%;
+}
+
+.form_group label,
+.form_group_1 label {
+    display: block;
+    margin-bottom: 1px;
+    color: #525252;
+}
+
+.form_group input, .form_group select, 
+.form_group_1 input, .form_group_1 select {
+    color: #525252;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #525252;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.first_dates , .datos_autorisar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formulario{
+    padding:30px 150px;
+}
+
+.botones2{
+    width: 40%;
+    margin: 0 30%;
+    padding: 10px 30px;
+    background: #45A6FF;
+    border-radius: 15px;
+    color: #ffff;
+    text-align: center;
+}
+
+.botones3{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.botones3 button{
+    margin: 0;
+}
+
+
+
+/* Estilos Panel de productos en finansas */
+.productos {
+    display: flex;
+    justify-content: space-between; /* Ajustado para mantener espacio uniforme entre elementos */
+    align-items: center;
+    margin-bottom: 15px; /* Añadido para separar visualmente cada conjunto de productos */
+    border-radius: 15px;
+    border: 1px solid #525252;
+    padding: 10px; /* Añadido para dar espacio interior a los elementos */
+}
+
+.productos .form_group {
+    width: 25%; /* Reducido para hacer espacio para el botón */
+    margin: 0 10px;
+}
+
+.productos .removeProductoBtn {
+    width: 90%;
+    margin-left: 10px; /* Añadido para separar el botón de los inputs */
+    padding: 10px;
+    background: #45A6FF; /* Color de fondo rojo para destacar */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.productos .form_group:last-child {
+    width: auto; /* Ajustado para que el botón "Quitar" no ocupe demasiado espacio */
+}
+
+#addProductoBtn {
+    margin: 20px auto; /* Centrado del botón "Agregar otro producto" */
+    display: block; /* Asegura que el botón sea un bloque */
+    width: 60%; /* Ajustado para un tamaño uniforme */
+}

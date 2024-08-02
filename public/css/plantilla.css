@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 200px;
+    min-height: 600px;
+    background: #45A6FF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 0 10px 10px 10px;
+}
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffff; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #45A6FF;
+    font-size: 30px;
+    font-weight: bold; 
+    margin-bottom: 15px;
+}
+.form_line {
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: white;
+    margin: 40px 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #158FFF;
+    border-radius: 15px;
+    width: 160px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0E6BBF;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}
+.logotipo{
+    color: white;
+    text-align: center;
+    font-family: 'Holtwood One SC', sans-serif;
+    font-size: 1.4em; 
+}
+.top-right {
+    text-align: right;
+    margin-bottom: 20px;
+    background: #45A6FF;
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-right a {
+    padding: 0 10px; 
+}
+
+/* Estilos Panel Superior */
+
+.menu-panel{
+    color: #000;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.menu-panel h2, h4 {
+    color: #545454;
+    text-align: start;
+    padding-left: 15px;
+
+}
+.menu-panel h2{
+    font-size: 2em;
+}
+.botones ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.botones li{
+    padding: 10px 30px;
+    background: #45A6FF;
+    border-radius: 15px;
+}
+
+.botones li a {
+    color: #fff;
+}
+
+.slider_bar{
+    height: 0.5px;
+    background: #545454;
+    width: 100%;
+    margin-top: 15px;
+}
