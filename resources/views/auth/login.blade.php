@@ -14,9 +14,20 @@
             <h3>SentinelShop</h3>
             <hr class="form_line">
 
+            @if ($errors->any())
+                <div class="error">
+                    <strong>¡Ups! Algo salió mal.</strong>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <div class="form_group">
                 <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" class="from_input" placeholder="Ingrese su correo electrónico" name="correo" required>
+                <input type="email" id="email" class="from_input" placeholder="Ingrese su correo electrónico" name="email" value="{{ old('correo') }}" required>
                 @error('correo')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -24,7 +35,7 @@
 
             <div class="form_group">
                 <label class="from_label" for="contrasena">Contraseña</label>
-                <input type="password" id="contrasena" class="from_input" placeholder="Ingrese su contraseña" name="contrasena" required>
+                <input type="password" id="password" class="from_input" placeholder="Ingrese su contraseña" name="password" required>
                 @error('contrasena')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -38,4 +49,14 @@
         </form>
     </div>
 </body>
+@if ($errors->any())
+    <div class="error">
+        <strong>¡Ups! Algo salió mal.</strong>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 </html>
