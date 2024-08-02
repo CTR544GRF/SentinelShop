@@ -59,7 +59,7 @@
                 </td>
                 <td data-label="Nu. Documento">{{ $usuario->numero_documento }}</td>
                 <td data-label="Nombre">{{ $usuario->nombre }}</td>
-                <td data-label="Correo Electrónico">{{ $usuario->correo_electronico }}</td>
+                <td data-label="Correo Electrónico">{{ $usuario->email }}</td>
                 <td data-label="Número Teléfono">{{ $usuario->numero_telefono }}</td>
                 <td data-label="Número Secundario">{{ $usuario->numero_secundario }}</td>
                 <td data-label="Número Terciario">{{ $usuario->numero_terciario }}</td>

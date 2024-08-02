@@ -15,7 +15,7 @@
 @stop
 
 @section('button_one')
-{{ 'Facturas de Pago' }}
+{{ 'Facturas de Cobro' }}
 @stop
 
 @section('link_1')

@@ -9,8 +9,9 @@
 </head>
 <body>
     <div class="contenedor">
-        <form class="inicio_sesion" method="PUT" action="{{ route('password.update') }}">
+        <form class="inicio_sesion" method="POST" action="{{ route('password.update') }}">
             @csrf
+            @method('PUT')
 
             <!-- Password Reset Token -->
             <input type="hidden" name="token" value="{{ $request->route('token') }}">

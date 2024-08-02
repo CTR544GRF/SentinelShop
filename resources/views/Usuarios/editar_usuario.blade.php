@@ -50,7 +50,7 @@
         </div>
         <div class="form_group">
             <label for="correo_electronico">Correo Electrónico</label>
-            <input type="email" id="correo_electronico" class="from_input" placeholder="Ingrese su correo electrónico" name="correo_electronico" value="{{ old('correo_electronico', $usuario->email) }}" required>
+            <input type="email" id="correo_electronico" class="from_input" placeholder="Ingrese su correo electrónico" name="email" value="{{ old('email', $usuario->email) }}" required>
         </div>
         <div class="form_group">
             <label for="nombre">Nombre Completo</label>
@@ -66,16 +66,10 @@
         </div>
         <div class="form_group">
             <label for="tipo_usuario">Tipo de Usuario</label>
-            <select id="tipo_usuario" name="tipo_usuario" required onchange="togglePasswordField(this)">
-                <option value="cliente">Cliente</option>
-                <option value="admin">Admin</option>
+            <select id="tipo_usuario" name="tipo_usuario" required>
+                <option value="cliente" {{ $usuario->tipo_usuario == 'cliente' ? 'selected' : '' }}>Cliente</option>
+                <option value="admin" {{ $usuario->tipo_usuario == 'admin' ? 'selected' : '' }}>Admin</option>
             </select>
-        </div>
-
-            <!-- Campo de contraseña -->
-            <div class="form_group" id="password_field" style="display: none;">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" class="from_input" placeholder="Ingrese una contraseña" name="contraseña">
         </div>
     </div>
     
@@ -89,28 +83,21 @@
             <label for="numero_terciario">Número Terciario</label>
             <input type="text" id="numero_terciario" class="from_input" placeholder="Ingrese su número terciario" name="numero_terciario" value="{{ old('numero_terciario', $usuario->numero_terciario) }}">
         </div>
+
+        @if($usuario->tipo_usuario === 'admin')
+            <div class="form_group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" class="from_input" placeholder="Ingrese una nueva contraseña" name="password">
+            </div>
+        @endif
     </div>
     
-    @if($usuario->tipo_usuario === 'admin')
-        <div class="form_group">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" class="from_input" placeholder="Ingrese una nueva contraseña" name="password">
-        </div>
-    @endif
+    
     
     <button class="botones2" type="submit">Actualizar Usuario</button>
 </form>
 
-<script>
-function togglePasswordField(selectElement) {
-    var passwordField = document.getElementById('password_field');
-    if (selectElement.value === 'admin') {
-        passwordField.style.display = 'block';
-    } else {
-        passwordField.style.display = 'none';
-    }
-}
-</script>
+
 
 </div>
 
